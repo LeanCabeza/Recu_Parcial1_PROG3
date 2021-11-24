@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "24940275-6c51-4be8-88a1-03ab9694e42c",
+		"name": "PRIMER_PARCIAL_LABO2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PizzaCarga",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "Cheddar",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "piedra",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/leand/Desktop/Cosas de Lean/523521.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/PizzaCarga.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"PizzaCarga.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PizzaConsultar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "Napolitana"
+						},
+						{
+							"key": "tipo",
+							"value": "piedra"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/PizzaConsultar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"PizzaConsultar.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AltaVenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "leandro_cabeza@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "Napolitana",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "piedra",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/leand/Desktop/Cosas de Lean/971255.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/AltaVenta.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"AltaVenta.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AltaVenta 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "leandro_cabeza@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "Cheddar",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "piedra",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/leand/Desktop/Cosas de Lean/971255.jpg"
+						},
+						{
+							"key": "cupon",
+							"value": "Cupon619e7cef33ed1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/AltaVenta2.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"AltaVenta2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultasVentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PrimerParcial/ConsultasVentas.php?consulta=B",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"ConsultasVentas.php"
+					],
+					"query": [
+						{
+							"key": "consulta",
+							"value": "B"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarVenta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroPedido",
+							"value": "Pedido619d86208b2c9",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "leandro_cabeza@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "perro",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "piedra",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/ModificarVenta.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"ModificarVenta.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrarVenta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nroPedido",
+							"value": "Pedido619da6743f892",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/BorrarVenta.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"BorrarVenta.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DevolverPizza",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "numeroPedido",
+							"value": "Pedido619e6423610d0",
+							"type": "text"
+						},
+						{
+							"key": "causaDevolucion",
+							"value": "Feo",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/leand/Desktop/Yo.JPG"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PrimerParcial/DevolverPizza.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"DevolverPizza.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultasDevoluciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PrimerParcial/ConsultaDevoluciones.php?consulta=c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PrimerParcial",
+						"ConsultaDevoluciones.php"
+					],
+					"query": [
+						{
+							"key": "consulta",
+							"value": "c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
